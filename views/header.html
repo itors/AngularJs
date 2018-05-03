@@ -7,10 +7,10 @@
           <i class="ti-menu"></i>
         </button>
         <!-- brand -->
-        <a class="navbar-brand text-lt" 
-          bs-aside="aside" 
-          data-template="views/partials/aside.tpl.html" 
-          data-placement="top" 
+        <a class="navbar-brand text-lt"
+          bs-aside="aside"
+          data-template="views/partials/aside.tpl.html"
+          data-placement="top"
           data-animation="am-slide-top aside-open-backdrop"
           data-container="body"
           >
@@ -25,7 +25,7 @@
 
       <!-- navbar collapse -->
       <div class="navbar-collapse hidden-xs" ng-class="{'show animated fadeIn' : app.navbarCollapse}">
-        <!-- nav -->
+        <!-- nav
         <ul class="nav navbar-nav navbar-left">
           <li>
             <a ui-sref="app.dashboard" translate="header.navbar.DASHBOARD">
@@ -48,13 +48,13 @@
             </a>
           </li>
         </ul>
-        <!-- / nav -->
+         / nav -->
 
         <!-- nabar right -->
         <ul class="nav navbar-nav navbar-right m-r-n">
-          <li>
+         <!-- <li>
             <script type="text/ng-template" id="settings">
-              <div tabindex="-1" class="p dropdown-menu bg-white bg-inherit no-b-t no-margin w-sm" role="menu">                
+              <div tabindex="-1" class="p dropdown-menu bg-white bg-inherit no-b-t no-margin w-sm" role="menu">
                 <p class="clearfix">
                   <a class="inline {{color}} p-xs m-h-xs m-v-xs pull-left no-borders" ng-repeat="color in options.headerColor" ng-click="setHeaderColor(color)">
                   </a>
@@ -64,7 +64,7 @@
                   <a class="inline {{color}} p-xs m-h-xs m-v-xs pull-left no-borders" ng-repeat="color in options.asideColor" ng-click="setAsideColor(color)">
                   </a>
                 </p>
-                <div class="line b-b b-light m-h-xs"></div>                
+                <div class="line b-b b-light m-h-xs"></div>
                 <div class="m-v-xs">
                   <label class="ui-checks m-h-xs no-margin">
                     <input type="checkbox" ng-model="app.settings.headerFixed"><i></i> Header fixed
@@ -88,10 +88,10 @@
             </a>
           </li>
           <li>
-            <a href 
-              bs-aside="aside" 
-              data-template="views/partials/aside.tpl.chat.html" 
-              data-placement="right" 
+            <a href
+              bs-aside="aside"
+              data-template="views/partials/aside.tpl.chat.html"
+              data-placement="right"
               data-animation="am-slide-right aside-open-inner modal-open"
               data-container="body"
               >
@@ -103,10 +103,11 @@
           <li class="hidden-xs">
             <a href ui-fullscreen><i class="glyphicon glyphicon-resize-vertical"></i></a>
           </li>
-          <li>            
+          -->
+          <li>
             <a href class="clear no-padding-h" bs-dropdown="dropdown" data-animation="am-collapse" data-template="user">
               <img src="images/a0.jpg" alt="..." class="navbar-img pull-right">
-              <span class="hidden-sm m-l">David M.</span>
+              <span class="hidden-sm m-l">测试账号</span>
               <b class="caret m-h-xs hidden-sm"></b>
             </a>
             <script type="text/ng-template" id="user">
@@ -130,17 +131,17 @@
         </ul>
         <!-- / navbar right -->
 
-        <!-- search form -->
+        <!-- search form
         <form class="navbar-form navbar-form-sm navbar-right visible-xs" role="search">
           <div class="form-group">
             <div class="input-group">
               <span class="input-group-btn">
                 <button type="submit" class="btn btn-sm no-bg btn-icon no-shadow no-padder"><i class="ti-search"></i></button>
               </span>
-              <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control input-sm no-bg no-border" placeholder="Search...">              
+              <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control input-sm no-bg no-border" placeholder="Search...">
             </div>
           </div>
         </form>
-        <!-- / search form -->
+       search form -->
       </div>
       <!-- / navbar collapse -->
